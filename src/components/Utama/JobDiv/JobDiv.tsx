@@ -7,7 +7,7 @@ import Image from 'next/image';
 const JobDiv = () => {
   const [jobs, setJobs] = useState([]);
   const getData = useCallback(async () => {
-    const res = await fetch('http://localhost:3000/api/product');
+    const res = await fetch('https://job-finder-ivory.vercel.app/api/product');
     if (!res.ok) {
       console.log('Gagal Dapat Data');
     } else {
